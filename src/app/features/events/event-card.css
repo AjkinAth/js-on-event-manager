@@ -1,0 +1,124 @@
+:host {
+  display: block;
+  block-size: 100%;
+}
+
+.event-card {
+  display: flex;
+  block-size: 100%;
+  flex-direction: column;
+}
+
+.event-card-image {
+  min-block-size: 10rem;
+  aspect-ratio: 2.35;
+  background: #19294c;
+}
+
+.event-card-image img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.event-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: clamp(1.125rem, 2.25vw, 1.625rem);
+}
+
+.event-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem 0.75rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 650;
+}
+
+.event-status {
+  padding: 0.25rem 0.625rem;
+  border-radius: 999px;
+  background: #e4edff;
+  color: #233f91;
+}
+
+.event-status-past {
+  background: #edf0f6;
+  color: #4c5a73;
+}
+
+.event-card-title {
+  margin-block-end: 0.5rem;
+  color: var(--ink);
+  font-size: clamp(1.25rem, 1.125rem + 0.55vw, 1.625rem);
+  font-weight: 750;
+  line-height: 1.2;
+  letter-spacing: -0.032em;
+  overflow-wrap: anywhere;
+}
+
+.event-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem 0.625rem;
+  margin-block-start: auto;
+  padding-block-start: 0.5rem;
+  border-block-start: 1px solid var(--line);
+}
+
+.card-management {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.card-control,
+.card-details {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-block-size: 2.75rem;
+  padding-inline: 0.625rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 650;
+}
+
+.card-control {
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.card-control:hover {
+  background: #edf3ff;
+  color: var(--ink);
+}
+
+.card-like[aria-pressed='true'],
+.card-like:hover,
+.card-remove:hover {
+  color: #a02348;
+}
+
+.card-like span {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.card-details {
+  color: var(--brand-blue);
+}
+
+.card-details:hover {
+  background: #edf3ff;
+  text-decoration: underline;
+}

@@ -1,0 +1,95 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "Angular Keynote",
+      "date": "2025-12-10T09:00:00Z",
+      "description": "The future of the framework revealed. Join the Angular team as they unveil the latest advancements in reactivity, hydration, and tooling.",
+      "location": "Main Hall",
+      "image": "/images/angular-keynote.png",
+      "speakers": [
+        "Sarah Drasner",
+        "Minko Gechev",
+        "Mark Techson"
+      ]
+    },
+    {
+      "id": "signals-lab-dec26",
+      "title": "Signals Deep Dive",
+      "date": "2026-12-03T18:30:00+02:00",
+      "description": "Bring a laptop for a 90-minute Angular lab. Starting with a slow event filter, you’ll use computed signals to remove duplicate work and trace which components update as you type.",
+      "location": "Piraeus Workshop Loft, Lab B · Piraeus",
+      "image": "/images/signals-deep-dive.png",
+      "speakers": [
+        "Elena Markou"
+      ]
+    },
+    {
+      "id": "ssr-dec26",
+      "title": "SSR at Scale",
+      "date": "2026-12-09T17:45:00+02:00",
+      "description": "Follow a ticket listing from its first server render through hydration in the browser. In the second half, pairs compare cache policies for pages where seat availability changes between requests.",
+      "location": "North Hall, Auditorium 2 · Athens",
+      "image": "/images/ssr-at-scale.png",
+      "speakers": [
+        "Andreas Linos"
+      ]
+    },
+    {
+      "id": "keyboard-dec26",
+      "title": "Book a Ticket Without a Mouse",
+      "date": "2026-12-12T10:00:00+02:00",
+      "description": "Working in pairs, audit a sample booking form using only a keyboard. You’ll repair a lost focus indicator, make validation errors easier to find, and test the checkout again with a screen reader.",
+      "location": "Kypseli Design Studio, Ground Floor · Athens",
+      "image": "/images/event4.png",
+      "speakers": [
+        "Iris Antonou"
+      ]
+    },
+    {
+      "id": "perf-jan27",
+      "title": "The First Three Seconds: A Frontend Performance Clinic",
+      "date": "2027-01-14T18:00:00+02:00",
+      "description": "Bring a browser performance trace or use the supplied storefront example. Small groups will identify what delays the first useful paint, try one change, and measure it on a throttled connection.",
+      "location": "Harbour Tech Rooms, Studio 1 · Piraeus",
+      "image": "/images/event5.png",
+      "speakers": [
+        "Theo Stavrou"
+      ]
+    },
+    {
+      "id": "booking-api-jan27",
+      "title": "Designing a Booking API That Handles Retries",
+      "date": "2027-01-23T10:30:00+02:00",
+      "description": "What happens when two people request the last seat? In this two-hour backend workshop, you’ll model a reservation, replay a timed-out request, and write a test that catches duplicate bookings.",
+      "location": "Foundry Lab, Room 3 · Thessaloniki",
+      "image": "/images/event4.png",
+      "speakers": [
+        "Dana Kouris"
+      ]
+    },
+    {
+      "id": "frontend-feb27",
+      "title": "Frontend Lightning Talks: Lessons from Production",
+      "date": "2027-02-04T19:00:00+02:00",
+      "description": "Three ten-minute talks cover a hydration mismatch, a date picker that broke across time zones, and a search box that returned stale results. Each speaker will show the failing case before walking through the fix.",
+      "location": "Railway Arts Hall, Screening Room · Thessaloniki",
+      "image": "/images/event5.png",
+      "speakers": [
+        "Mira Dellis",
+        "Nikos Arvanis",
+        "Lea Vrettou"
+      ]
+    }
+  ],
+  "tickets": [
+    {
+      "eventId": "1",
+      "id": 2
+    },
+    {
+      "eventId": "1",
+      "id": 3
+    }
+  ]
+}

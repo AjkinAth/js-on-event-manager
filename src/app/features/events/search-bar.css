@@ -1,0 +1,52 @@
+:host {
+  display: block;
+  max-inline-size: 30rem;
+}
+
+.event-search {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.event-search label {
+  color: #f0f6ff;
+  font-size: 0.9375rem;
+  font-weight: 650;
+}
+
+.search-field {
+  position: relative;
+}
+
+.search-field input {
+  --focus: #a9edff;
+
+  min-block-size: 3.25rem;
+  padding-inline-start: 3rem;
+  border-color: #c8daf0;
+  box-shadow: 0 8px 22px #050c253b;
+}
+
+.search-icon {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 1.15rem;
+  inline-size: 0.9rem;
+  block-size: 0.9rem;
+  translate: 0 -60%;
+  border: 2px solid #435e89;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.search-icon::after {
+  position: absolute;
+  inset-block-end: -0.19rem;
+  inset-inline-end: -0.27rem;
+  inline-size: 0.38rem;
+  block-size: 2px;
+  rotate: 45deg;
+  border-radius: 1px;
+  background: #435e89;
+  content: '';
+}

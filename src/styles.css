@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+@import './theme.css';
+
+@theme {
+  --color-primary: #1d4ed8;
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--ink);
+  font-family: theme('font-family.sans');
+}
+
+@property --event-glow-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0turn;
+}
+
+.event-card-glow {
+  position: relative;
+  isolation: isolate;
+}
+
+@supports (mask-image: linear-gradient(black, transparent)) {
+  .event-card-glow::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: conic-gradient(
+      from var(--event-glow-angle, 0turn),
+      #8b5cf6,
+      #2563eb,
+      #06b6d4,
+      #2dd4bf,
+      #eab308,
+      #ec4899,
+      #8b5cf6
+    );
+    mask-image:
+      linear-gradient(to bottom, black, transparent 12px),
+      linear-gradient(to top, black, transparent 12px),
+      linear-gradient(to right, black, transparent 12px),
+      linear-gradient(to left, black, transparent 12px);
+    opacity: 0.72;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .event-card-glow::after {
+    animation: event-card-glow-spin 20s linear infinite;
+  }
+}
+
+@keyframes event-card-glow-spin {
+  to {
+    --event-glow-angle: 1turn;
+  }
+}

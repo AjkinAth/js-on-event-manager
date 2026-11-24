@@ -1,0 +1,116 @@
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 2.75rem;
+  margin-block-end: 0.75rem;
+  padding-inline: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-field);
+  background: var(--surface);
+  color: var(--brand-blue);
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.back-link:hover {
+  background: #eaf1ff;
+}
+
+.event-detail {
+  display: grid;
+  gap: clamp(1.25rem, 3.5vw, 2rem);
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.5fr);
+  align-items: start;
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.detail-main {
+  display: grid;
+  gap: 1.25rem;
+  min-inline-size: 0;
+}
+
+.detail-cover {
+  display: block;
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius-panel);
+  background: #19294c;
+  box-shadow: var(--panel-shadow);
+}
+
+.event-description,
+.booking-panel {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-radius: var(--radius-panel);
+  box-shadow: var(--panel-shadow);
+}
+
+.event-description {
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.event-description h2,
+.booking-panel h2 {
+  font-size: clamp(1.25rem, 1.125rem + 0.4vw, 1.5rem);
+  font-weight: 750;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.event-description p {
+  max-inline-size: 68ch;
+  margin-block-start: 0.75rem;
+  color: var(--muted);
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.booking-panel {
+  --action-bg: #a7e6ff;
+  --action-hover: #c8f2ff;
+  --action-ink: #102647;
+  --focus: #a9edff;
+
+  border: 1px solid #304875;
+  background: radial-gradient(at top right, #2d437b, transparent 65%), var(--navy);
+  color: #fff;
+}
+
+.booking-facts {
+  display: grid;
+  margin-block: 1.125rem 1.5rem;
+}
+
+.booking-facts > div {
+  display: grid;
+  gap: 0.25rem;
+  padding-block: 0.875rem;
+  border-block-start: 1px solid #6c85b266;
+}
+
+.booking-facts dt {
+  color: #becdea;
+  font-size: 0.875rem;
+}
+
+.booking-facts dd {
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+.booking-panel .primary-action {
+  inline-size: 100%;
+}
+
+@media (max-width: 48rem) {
+  .detail-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
